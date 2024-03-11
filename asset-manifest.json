@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/day5-classwork/static/css/main.1251b9e3.css",
+    "main.js": "/day5-classwork/static/js/main.78ac57dd.js",
+    "static/js/453.9bb663b3.chunk.js": "/day5-classwork/static/js/453.9bb663b3.chunk.js",
+    "index.html": "/day5-classwork/index.html",
+    "main.1251b9e3.css.map": "/day5-classwork/static/css/main.1251b9e3.css.map",
+    "main.78ac57dd.js.map": "/day5-classwork/static/js/main.78ac57dd.js.map",
+    "453.9bb663b3.chunk.js.map": "/day5-classwork/static/js/453.9bb663b3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1251b9e3.css",
+    "static/js/main.78ac57dd.js"
+  ]
+}
