@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const[input,setInput] = useState({
+    subject:"",
+    hours :""
+  })
+
+  const handleChange = (e)=>{
+    let name = e.target.name;
+    let value = e.target.value;
+
+    setInput((prev)=>{
+      return {...prev,[name]:value};
+    })
+  }
+  const handleSubmit = ()=>{
+    
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <>
+   <div>
+    <h3>Geekster Education Planner</h3>
+    <input type="text" placeholder='Subject' name='subject' onChange={handleChange}/>
+    <input type="number"  name='hours' onChange={handleChange}/>
+    <button onClick={handleSubmit}>Add</button>
+   </div>
+
+   <div >
+    <h3>subject</h3>
+    <p></p>
+    <button ></button>
+    <button>-</button>
+   </div>
+   </>
+  )
 }
 
 export default App;
